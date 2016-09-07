@@ -16,7 +16,6 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InteralStateType } from './app.service';
 import { Home } from './home';
 import { About } from './about';
-import { NoContent } from './no-content';
 import { XLarge } from './home/x-large';
 
 // Application wide providers
@@ -39,7 +38,6 @@ type StoreType = {
     App,
     About,
     Home,
-    NoContent,
     XLarge
   ],
   imports: [ // import Angular's modules
