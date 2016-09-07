@@ -1,1 +1,1 @@
-Like Tinder but for make, based off of a seed angular2 app.
+Like Tinder but for makeup, based off of the seed angular2 webpack app.
