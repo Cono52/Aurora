@@ -12,7 +12,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: [],
+  styles: [`
+    app {
+        text-align: center;
+    }
+  `],
   template: `<h1>Cake-Up<h1>`
 })
 export class App {
