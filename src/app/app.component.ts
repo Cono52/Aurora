@@ -12,12 +12,15 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
+  templateUrl: './app.component.html',
   styles: [`
-    app {
-        text-align: center;
+    html, 
+    body {
+       margin: 0;
+       height: 100%;
+       overflow:hidden;
     }
-  `],
-  template: `<h1>Cake-Up<h1>`
+  `]
 })
 export class App {
  
