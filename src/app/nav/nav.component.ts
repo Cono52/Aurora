@@ -6,13 +6,12 @@ import { Component } from '@angular/core';
   styles: [`
     :host {
        background-color: #f48fb1;
-       padding: 10px;
-       margin-bottom:10px;
        font-family: 'Lobster', cursive;
+       margin-bottom:60px;
     }
     h1 {
-        margin:0px;
         text-align:center;
+        font-size:30px
     }
   `] 
 })

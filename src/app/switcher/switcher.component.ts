@@ -4,15 +4,25 @@ import { Component } from '@angular/core';
   selector: 'switcher',
   templateUrl: './switcher.component.html',
   styles: [`
-    :host {
-        text-align:center;
-        display:block;
-        margin-left:40px;
-        margin-right:40px;
+    :host div{
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
-    img {
-      width: 100%;
-      height: auto;
+    :host div button{
+       color: #e91e63;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transparent; background-color: 
+       transparent; border-color: transparent;
+       transparent; cursor: default;
+    }
+
+    button:focus {outline:0;}
+
+    button:active i{
+      color: #fdb5ce;
     }
   `]
 })
