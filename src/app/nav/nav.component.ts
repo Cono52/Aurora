@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './nav.component.html',
   styles: [`
     :host {
-       background-color: grey;
+       background-color: #f48fb1;
        padding: 10px;
        margin-bottom:10px;
        font-family: 'Lobster', cursive;

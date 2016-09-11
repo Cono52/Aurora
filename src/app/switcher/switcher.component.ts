@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
     :host {
         text-align:center;
         display:block;
+        margin-left:40px;
+        margin-right:40px;
+    }
+    img {
+      width: 100%;
+      height: auto;
     }
   `]
 })
