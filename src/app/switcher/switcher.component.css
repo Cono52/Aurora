@@ -1,0 +1,31 @@
+:host div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:host div button{
+  color: #e91e63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-round {
+  background-color: #f48fb1;
+  border-radius: 999em;
+  border:0;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+}   
+
+button:focus {
+  outline:0;
+} 
+
+button:active i{
+  color: #fdb5ce;
+}
