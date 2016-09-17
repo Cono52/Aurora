@@ -7,5 +7,9 @@ import {
 import { App } from './app.component';
 
 describe('App', () => {
- 
+   let app:App; 
+
+   it('tester', () => {
+     expect(2+2==4);
+   })
 });
