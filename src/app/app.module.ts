@@ -5,6 +5,10 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -15,6 +19,7 @@ import { MdModule } from './md.module';
 import { App } from './app.component';
 import { SwitcherComponent } from './switcher/switcher.component';
 import { NavComponent } from './nav/nav.component';
+import { CakesService } from './cakes.service'
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
@@ -30,10 +35,12 @@ import { NavComponent } from './nav/nav.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     MdModule.forRoot()
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
+    CakesService
   ]
 })
 export class AppModule {

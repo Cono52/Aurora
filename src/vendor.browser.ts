@@ -13,6 +13,7 @@ import '@angular/common';
 import '@angular/forms';
 import '@angular/http';
 import '@angular/router';
+import "angular2-in-memory-web-api";
 
 // AngularClass
 import '@angularclass/hmr';
