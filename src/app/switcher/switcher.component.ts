@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+import { Cake } from '../cake';
+import { CakesService } from '../cakes.service';
+
+
 @Component({
   selector: 'switcher',
   templateUrl: './switcher.component.html',
@@ -7,16 +11,23 @@ import { Component } from '@angular/core';
 })
 export class SwitcherComponent {
 
-  constructor(){
+  cakes: Cake[];
+  currentCake: Cake;
 
+  constructor( private cakesService: CakesService ) { }
+
+  ngOnInit(): void {
+    this.getCakes();
   }
 
-  ngOnInit() {
-   
+  getCakes(): void {
+    this.cakesService
+        .getCakes()
+        .then(cakes => this.cakes = cakes);
   }
 
   switch() {
-    console.log("demo switch m8");
+    console.log(this.cakes);
   }
 
 }
