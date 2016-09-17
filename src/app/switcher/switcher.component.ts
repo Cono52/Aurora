@@ -15,4 +15,8 @@ export class SwitcherComponent {
    
   }
 
+  switch() {
+    console.log("demo switch m8");
+  }
+
 }
