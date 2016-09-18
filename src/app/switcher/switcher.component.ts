@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Cake } from '../cake';
 import { CakesService } from '../cakes.service';
@@ -9,7 +9,7 @@ import { CakesService } from '../cakes.service';
   templateUrl: './switcher.component.html',
   styleUrls: ['./switcher.component.css']
 })
-export class SwitcherComponent {
+export class SwitcherComponent implements OnInit {
 
   cakes: Cake[];
   currentCake: Cake;
@@ -23,11 +23,17 @@ export class SwitcherComponent {
   getCakes(): void {
     this.cakesService
         .getCakes()
-        .then(cakes => this.cakes = cakes);
+        .then(cakes => {
+          this.cakes = cakes; 
+          this.currentCake = this.cakes.shift();
+        });
   }
 
   switch() {
-    console.log(this.cakes);
+    this.currentCake = this.cakes.shift();
+    if(this.cakes.length < 5){
+      console.log("load more");
+    }
   }
 
 }
