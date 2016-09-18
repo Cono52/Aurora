@@ -2,7 +2,6 @@ import { InMemoryDbService } from 'angular2-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     let cakes = [
-      [
         {
             "_id": "57d7237a1fdd46dd08820b21",
             "guid": "d53ea988-536c-4b41-85fb-028da4c39625",
@@ -93,7 +92,6 @@ export class InMemoryDataService implements InMemoryDbService {
             "age": 27,
             "username": "moemamoe"
         }
-]
     ];
     return {cakes};
   }
