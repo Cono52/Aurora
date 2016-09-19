@@ -8,7 +8,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$60.49",
             "rating": 2,
             "picture": "../../assets/mockpics/IMG_9510.jpg",
-            "age": 30,
+            "level": 5,
             "username": "girly52"
         },
         {
@@ -17,7 +17,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$78.13",
             "rating": 0,
             "picture": "../../assets/mockpics/IMG_9511.jpg",
-            "age": 33,
+            "level": 6,
             "username": "lady21"
         },
         {
@@ -26,7 +26,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$89.52",
             "rating": 2,
             "picture": "../../assets/mockpics/IMG_9512.jpg",
-            "age": 31,
+            "level": 4,
             "username": "christiloma"
         },
         {
@@ -35,7 +35,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$66.14",
             "rating": 2,
             "picture": "../../assets/mockpics/IMG_9513.jpg",
-            "age": 16,
+            "level": 6,
             "username": "bountybar"
         },
         {
@@ -44,7 +44,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$77.55",
             "rating": 5,
             "picture": "../../assets/mockpics/IMG_9514.jpg",
-            "age": 17,
+            "level": 7,
             "username": "jessq"
         },
         {
@@ -53,7 +53,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$99.58",
             "rating": 3,
             "picture": "../../assets/mockpics/IMG_9515.jpg",
-            "age": 29,
+            "level": 9,
             "username": "zalgaso"
         },
         {
@@ -62,7 +62,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$33.21",
             "rating": 5,
             "picture": "../../assets/mockpics/IMG_9517.jpg",
-            "age": 35,
+            "level": 5,
             "username": "kirbya"
         },
         {
@@ -71,7 +71,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$67.88",
             "rating": 2,
             "picture": "../../assets/mockpics/IMG_9519.jpg",
-            "age": 30,
+            "level": 4,
             "username": "masonh"
         },
         {
@@ -80,7 +80,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$82.72",
             "rating": 0,
             "picture": "../../assets/mockpics/IMG_9523.jpg",
-            "age": 19,
+            "level": 9,
             "username": "chenxiu"
         },
         {
@@ -89,7 +89,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "price": "$56.75",
             "rating": 3,
             "picture": "../../assets/mockpics/IMG_9524.jpg",
-            "age": 27,
+            "level": 7,
             "username": "moemamoe"
         }
     ];
