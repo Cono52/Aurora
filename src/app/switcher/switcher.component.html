@@ -1,9 +1,19 @@
 <div class="container-fluid">
-    <div class="row">
-        <div *ngIf="currentCake">
-            <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></button>
-            <img class="img-responsive col-xs-10" [src]="currentCake.picture" alt="123">
-            <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
+    <div *ngIf="currentCake">
+        <div class="row">
+            <div class="picBox">
+                <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></button>
+                <img class="img-responsive col-xs-10" [src]="currentCake.picture" alt="123">
+                <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="row">
+            <md-grid-list cols="4" [style.background]="'lightblue'">
+                <md-grid-tile><i class="fa fa-user" aria-hidden="true"></i>{{currentCake.username}}</md-grid-tile>
+                <md-grid-tile><i class="fa fa-paint-brush" aria-hidden="true"></i>{{currentCake.level}}</md-grid-tile>
+                <md-grid-tile><i class="fa fa-star" aria-hidden="true"></i>{{currentCake.rating}}</md-grid-tile>
+                <md-grid-tile>{{currentCake.price}}</md-grid-tile>
+            </md-grid-list>
         </div>
     </div>
 </div>

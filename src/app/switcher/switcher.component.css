@@ -1,4 +1,4 @@
-:host div{
+:host .picBox{
   display: flex;
   align-items: center;
   justify-content: center;
