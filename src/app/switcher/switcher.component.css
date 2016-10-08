@@ -29,3 +29,8 @@ button:focus {
 button:active i{
   color: #fdb5ce;
 }
+
+.data i{
+  margin:3px;
+  font-size: 30px;
+}

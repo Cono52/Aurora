@@ -7,12 +7,14 @@
                 <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
             </div>
         </div>
-        <div class="row">
-            <md-grid-list cols="4" [style.background]="'lightblue'">
-                <md-grid-tile><i class="fa fa-user" aria-hidden="true"></i>{{currentCake.username}}</md-grid-tile>
-                <md-grid-tile><i class="fa fa-paint-brush" aria-hidden="true"></i>{{currentCake.level}}</md-grid-tile>
-                <md-grid-tile><i class="fa fa-star" aria-hidden="true"></i>{{currentCake.rating}}</md-grid-tile>
-                <md-grid-tile>{{currentCake.price}}</md-grid-tile>
+        <div class="row data">
+           <md-grid-list cols="2" rowHeight="140px" [style.background]="'#fdb5ce'">
+                <md-grid-tile><i class="fa fa-star" aria-hidden="true"></i><i>{{currentCake.rating}}</i></md-grid-tile>
+                <md-grid-tile><i class="fa fa-usd" aria-hidden="true"></i><i>{{currentCake.price}}</i></md-grid-tile>
+            </md-grid-list>
+            <md-grid-list cols="2" rowHeight="140px" [style.background]="'#fdb5ce'">
+                <md-grid-tile><i class="fa fa-user" aria-hidden="true"></i><i>{{currentCake.username}}</i></md-grid-tile>
+                <md-grid-tile><i class="fa fa-paint-brush" aria-hidden="true"></i><i>{{currentCake.level}}</i></md-grid-tile>
             </md-grid-list>
         </div>
     </div>
