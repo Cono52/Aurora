@@ -1,10 +1,17 @@
 :host .picBox{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 :host div button{
   color: #e91e63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +29,19 @@
   cursor: pointer;
 }   
 
+.btn-round-mover {
+  background-color: #f48fb1;
+  border-radius: 999em;
+  border:0;
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+  margin-top: 35px;
+}  
+
 button:focus {
   outline:0;
 } 
@@ -30,7 +50,26 @@ button:active i{
   color: #fdb5ce;
 }
 
-.data i{
-  margin:3px;
+.data{
+  margin-top: 10px;
+}
+
+md-grid-tile {
   font-size: 30px;
+}
+
+h4 { 
+   position: absolute; 
+   bottom:-9px; 
+   left: 50px; 
+   width: 100%; 
+}
+
+h4 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
 }
