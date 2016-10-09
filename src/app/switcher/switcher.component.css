@@ -63,10 +63,21 @@ button:active i{
 
 .data{
   margin-top: 10px;
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+}
+
+md-grid-list {
+ margin: 5px;
 }
 
 md-grid-tile {
+  background-color: #f48fb1;
   font-size: 30px;
+}
+
+md-grid-tile p{
+  margin-top:10px;
+  margin-left:5px;
 }
 
 .star{

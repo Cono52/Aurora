@@ -2,23 +2,31 @@
     <div *ngIf="currentCake">
         <div class="row">
             <div class="picBox">
-                <button (click)="switch()" class="col-xs-1 btn-round dislike"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+                <button (click)="like()" class="col-xs-1 btn-round dislike"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
                 <img class="img-responsive col-xs-10" [src]="currentCake.picture" alt="123">
                 <h4><span>{{currentCake.username}}</span></h4>
-                <button (click)="switch()" class="col-xs-1 btn-round like"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></button>
+                <button (click)="dislike()" class="col-xs-1 btn-round like"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></button>
             </div>
         </div>
         <div class="row data">
-           <md-grid-list cols="2" gutterSize="-1px" rowHeight="80px">
-                <md-grid-tile><i class="fa fa-star star" aria-hidden="true"></i><i>{{currentCake.rating}}</i></md-grid-tile>
-                <md-grid-tile><i class="fa fa-paint-brush brush" aria-hidden="true"></i><i>{{currentCake.level}}</i></md-grid-tile>
+           <md-grid-list cols="2" gutterSize="5px" rowHeight="80px">
+                <md-grid-tile>
+                    <i class="fa fa-star star" aria-hidden="true"></i><p>{{currentCake.rating}}</p>
+                </md-grid-tile>
+                <md-grid-tile>
+                    <i class="fa fa-paint-brush brush" aria-hidden="true"></i><p>{{currentCake.level}}</p>
+                </md-grid-tile>
             </md-grid-list>
             <md-grid-list cols="1" rowHeight="80px">
-                <md-grid-tile><i class="fa fa-usd price" aria-hidden="true"></i><i>{{currentCake.price}}</i></md-grid-tile>
+                <md-grid-tile>
+                    <i class="fa fa-usd price" aria-hidden="true"></i><p>{{currentCake.price}}</p>
+                </md-grid-tile>
             </md-grid-list>
         </div>
         <div class="row move">
-            <button (click)="move()" class="col-xs-1 btn-round-mover"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></button>
+            <button routerLink="/cake-detail" routerLinkActive="active" class="col-xs-1 btn-round-mover">
+                <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
 </div>

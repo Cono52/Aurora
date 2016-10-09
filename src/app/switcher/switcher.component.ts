@@ -29,7 +29,14 @@ export class SwitcherComponent implements OnInit {
         });
   }
 
-  switch() {
+  like() {
+    this.currentCake = this.cakes.shift();
+    if(this.cakes.length < 5){
+      console.log("load more");
+    }
+  }
+
+  dislike() {
     this.currentCake = this.cakes.shift();
     if(this.cakes.length < 5){
       console.log("load more");
