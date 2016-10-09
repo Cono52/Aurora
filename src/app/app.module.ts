@@ -18,6 +18,7 @@ import { MdModule } from './md.module';
 // App is our top level component
 import { App } from './app.component';
 import { SwitcherComponent } from './switcher/switcher.component';
+import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 import { NavComponent } from './nav/nav.component';
 import { CakesService } from './cakes.service'
 
@@ -29,7 +30,8 @@ import { CakesService } from './cakes.service'
   declarations: [
     App,
     NavComponent,
-    SwitcherComponent
+    SwitcherComponent,
+    CakeDetailComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
