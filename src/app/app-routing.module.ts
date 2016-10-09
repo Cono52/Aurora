@@ -7,7 +7,7 @@ import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', redirectTo: 'switcher', pathMatch: 'full' },
+      { path: '', component: SwitcherComponent, pathMatch: 'full'},
       { path: 'switcher', component: SwitcherComponent },
       { path: 'cake-detail', component: CakeDetailComponent },
     ]),
