@@ -5,7 +5,6 @@
   justify-content: center;
 }
 :host div button{
-  color: #e91e63;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +17,6 @@
 }
 
 .btn-round {
-  background-color: #f48fb1;
   border-radius: 999em;
   border:0;
   width: 56px;
@@ -27,9 +25,22 @@
   line-height: 1;
   position: relative;
   cursor: pointer;
-}   
+  margin:-30px;
+  z-index: 2;
+} 
+
+.dislike {
+  color: #0071b7;
+  background-color: #f48fb1;
+} 
+
+.like {
+  color: #e4004e;
+  background-color: #f48fb1;
+} 
 
 .btn-round-mover {
+  color: #e91e63;
   background-color: #f48fb1;
   border-radius: 999em;
   border:0;

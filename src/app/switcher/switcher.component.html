@@ -2,10 +2,10 @@
     <div *ngIf="currentCake">
         <div class="row">
             <div class="picBox">
-                <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></button>
+                <button (click)="switch()" class="col-xs-1 btn-round dislike"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
                 <img class="img-responsive col-xs-10" [src]="currentCake.picture" alt="123">
                 <h4><span>{{currentCake.username}}</span></h4>
-                <button (click)="switch()" class="col-xs-1 btn-round"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></button>
+                <button (click)="switch()" class="col-xs-1 btn-round like"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></button>
             </div>
         </div>
         <div class="row data">
