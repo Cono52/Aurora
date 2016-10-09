@@ -69,6 +69,18 @@ md-grid-tile {
   font-size: 30px;
 }
 
+.star{
+  color: #d6d600;;
+}
+
+.brush{
+  color: blue;
+}
+
+.price{
+  color: green;
+}
+
 h4 { 
    position: absolute; 
    bottom:-9px; 
