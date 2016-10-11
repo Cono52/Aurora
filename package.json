@@ -1,5 +1,5 @@
 {
-  "name": "cake-up",
+  "name": "Aurora",
   "version": "0.0.0",
   "description": "",
   "keywords": [
@@ -8,7 +8,7 @@
     "typescript"
   ],
   "author": "Conor O'Flanagan",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "homepage": "https://github.com/Cono52/Aurora",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack --config config/webpack.dev.js --progress --profile",
