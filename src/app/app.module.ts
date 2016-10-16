@@ -16,7 +16,7 @@ import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
 import { MdModule } from './md.module';
 // App is our top level component
-import { App } from './app.component';
+import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SwitcherComponent } from './switcher/switcher.component';
 import { CakeDetailComponent } from './cake-detail/cake-detail.component';
@@ -27,9 +27,9 @@ import { CakesService } from './cakes.service'
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [ App ],
+  bootstrap: [ AppComponent ],
   declarations: [
-    App,
+    AppComponent,
     NavComponent,
     SwitcherComponent,
     CakeDetailComponent

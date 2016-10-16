@@ -22,7 +22,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
     }
   `]
 })
-export class App {
+
+export class AppComponent {
  
   constructor(){
 

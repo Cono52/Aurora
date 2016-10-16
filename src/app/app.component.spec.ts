@@ -4,10 +4,11 @@ import {
 } from '@angular/core/testing';
 
 // Load the implementations that should be tested
-import { App } from './app.component';
+import { AppComponent } from './app.component';
 
 describe('App', () => {
-   let app:App; 
+   let app:AppComponent; 
+
 
    it('tester', () => {
      expect(2+2==4);
