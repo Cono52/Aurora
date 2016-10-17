@@ -31,17 +31,17 @@
 
 .dislike {
   color: #0071b7;
-  background-color: #f48fb1;
+  background-color: #433f40;
 } 
 
 .like {
   color: #e4004e;
-  background-color: #f48fb1;
+  background-color: #433f40; 
 } 
 
 .btn-round-mover {
   color: #e91e63;
-  background-color: #f48fb1;
+  background-color: #433f40;
   border-radius: 999em;
   border:0;
   width: 90px;
@@ -58,7 +58,7 @@ button:focus {
 } 
 
 button:active i{
-  color: #fdb5ce;
+  color: #433f40;
 }
 
 .data{
@@ -71,7 +71,8 @@ md-grid-list {
 }
 
 md-grid-tile {
-  background-color: #f48fb1;
+  background-color: #433f40;
+  color: white;
   font-size: 30px;
 }
 
