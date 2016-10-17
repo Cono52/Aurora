@@ -9,6 +9,7 @@ import { CakesService } from '../cakes.service';
   templateUrl: './switcher.component.html',
   styleUrls: ['./switcher.component.css']
 })
+
 export class SwitcherComponent implements OnInit {
 
   cakes: Cake[];
@@ -24,7 +25,7 @@ export class SwitcherComponent implements OnInit {
     this.cakesService
         .getCakes()
         .then(cakes => {
-          this.cakes = cakes; 
+          this.cakes = cakes;
           this.currentCake = this.cakes.shift();
         });
   }
