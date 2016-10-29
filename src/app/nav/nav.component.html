@@ -1,8 +1,18 @@
 <div class="container">
     <div class="row">
-        <div class="col-xs-4 icon icon-home"><i routerLink="/switcher"  routerLinkActive="active"class="fa fa-home fa-2x" aria-hidden="true"></i></div>
-        <div class="col-xs-4"><h1>Aurora</h1></div>
-        <div class="col-xs-4 icon icon-user"><i routerLink="/profile"  routerLinkActive="active" class="fa fa-user fa-2x" aria-hidden="true"></i>
+
+        <div (click)="getRoute()" class="col-xs-4 icon icon-home">
+            <i routerLink="/switcher"  routerLinkActive="active"class="fa fa-home fa-2x" aria-hidden="true"></i>
         </div>
+
+        <div class="col-xs-4"><h1>Aurora</h1></div>
+
+        <div *ngIf="currentRoute !== '/profile'" (click)="getRoute()" class="col-xs-4 icon icon-user">
+            <i routerLink="/profile"  routerLinkActive="active" class="fa fa-user fa-2x" aria-hidden="true"></i>
+        </div>
+        <div *ngIf="currentRoute == '/profile'" class="col-xs-4 icon icon-user">
+        <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+        </div>
+        
     </div>
 </div>

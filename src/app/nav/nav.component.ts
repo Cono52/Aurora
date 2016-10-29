@@ -7,12 +7,17 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
-  constructor(){
+  currentRoute: string;
 
+  constructor(){
   }
 
   ngOnInit() {
-   
+    this.currentRoute = window.location.pathname;
+  }
+
+  getRoute() {
+    this.currentRoute = window.location.pathname;
   }
 
 }
