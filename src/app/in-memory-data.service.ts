@@ -36,7 +36,7 @@ export class CakeData implements InMemoryDbService {
             "rating": 124,
             "picture": "../../assets/mockpics/IMG_9513.jpg",
             "level": 6,
-            "username": "bountybar"
+            "username": "belana"
         },
         {
             "_id": "57d7237a862fb27656a9472a",
