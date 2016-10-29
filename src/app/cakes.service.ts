@@ -9,12 +9,12 @@ import { Cake } from './cake';
 export class CakesService{
 
   private headers = new Headers({'Content-Type': 'application/json'});
-  private heroesUrl = 'app/cakes';  // URL to web api
+  private cakesUrl = 'app/cakes';  // URL to web api
 
   constructor(private http: Http) { }
   
   getCakes(): Promise<Cake[]> {
-    return this.http.get(this.heroesUrl)
+    return this.http.get(this.cakesUrl)
                .toPromise()
                .then(response => response.json().data as Cake[])
                .catch(this.handleError);
