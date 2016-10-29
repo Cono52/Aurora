@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { SwitcherComponent } from './switcher/switcher.component';
 import { CakeDetailComponent } from './cake-detail/cake-detail.component';
+import { ProfileComponent } from './profile/profile.component'
 
 @NgModule({
   imports: [
@@ -10,6 +11,7 @@ import { CakeDetailComponent } from './cake-detail/cake-detail.component';
       { path: '', component: SwitcherComponent, pathMatch: 'full'},
       { path: 'switcher', component: SwitcherComponent },
       { path: 'cake-detail', component: CakeDetailComponent },
+      { path: 'profile', component: ProfileComponent }
     ]),
   ],
   exports: [
