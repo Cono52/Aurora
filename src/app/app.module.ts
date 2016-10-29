@@ -7,7 +7,7 @@ import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularcla
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { CakeData, UserData }  from './in-memory-data.service';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -43,7 +43,7 @@ import { CakesService } from './cakes.service'
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    InMemoryWebApiModule.forRoot(CakeData, UserData),
     MdModule.forRoot()
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
