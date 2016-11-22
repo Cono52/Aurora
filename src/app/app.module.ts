@@ -13,7 +13,6 @@ import { CakeData, UserData }  from './in-memory-data.service';
  * Platform and Environment providers/directives/pipes
  */
 import { ENV_PROVIDERS } from './environment';
-import { ROUTES } from './app.routes';
 import { MdModule } from './md.module';
 // App is our top level component
 import { AppComponent } from './app.component';
@@ -45,7 +44,6 @@ import { CakesService } from './cakes.service'
     AppRoutingModule,
     InMemoryWebApiModule.forRoot(CakeData, UserData),
     MdModule.forRoot()
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
