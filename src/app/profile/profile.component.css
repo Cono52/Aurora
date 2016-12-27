@@ -1,44 +1,48 @@
 :host {
-    text-align: center;
+	text-align: center;
+}
+
+.user {	
+	margin-top: 25px;
 }
 
 button {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 #name {
-    font-size: 25px;
-    margin-bottom: 30px;
+	margin-top:20px;
+	margin-bottom: 30px;
 }
 
 .imageBack{
-   background-color: #433f40;
+	background-color: #433f40;
 }
 
 #profilePic {
-    margin-top: 20px;
-    margin-bottom:20px;
-    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+	margin-top: 20px;
+	margin-bottom:20px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
 }
 
 .data{
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 md-grid-list {
- margin: 5px;
+	margin: 5px;
 }
 
 md-grid-tile {
-  background-color: #433f40;
-  color: white;
-  font-size: 30px;
+	background-color: #433f40;
+	color: white;
+	font-size: 30px;
 }
 
 md-grid-tile p{
-  font-size: 20px; 
-  margin-top:10px;
-  margin-left:5px;
+	font-size: 20px; 
+	margin-top:10px;
+	margin-left:5px;
 }
