@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 
 @Component({
     selector: 'file-upload',
+    styleUrls: ['./file-uploader.component.css'],
     templateUrl: './file-uploader.component.html'
 })
 
@@ -17,11 +18,11 @@ export class FileUploadComponent {
         console.log(this.filesToUpload)
 
     //Reintialize if there is time to get this live
-    //     this.makeFileRequest("http://localhost:3000/upload", [], this.filesToUpload).then((result) => {
-    //         console.log(result);
-    //     }, (error) => {
-    //         console.error(error);
-    //     });
+        this.makeFileRequest("http://localhost:8123/upload", [], this.filesToUpload).then((result) => {
+             console.log(result);
+         }, (error) => {
+            console.error(error);
+         });
     }
  
     fileChangeEvent(fileInput: any){

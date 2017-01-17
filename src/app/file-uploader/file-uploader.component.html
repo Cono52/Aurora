@@ -1,2 +1,6 @@
-<input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
-<button type="button" (click)="upload()">Upload</button>
+<div id="container">
+    <input id="file" name="file" class="inputfile" type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+    <label for="file">Choose a file</label>
+    <button class='btn btn-primary' type="button" (click)="upload()">Upload</button>
+</div>
+
