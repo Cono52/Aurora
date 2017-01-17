@@ -22,6 +22,7 @@ import { SwitcherComponent } from './switcher/switcher.component';
 import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 import { NavComponent } from './nav/nav.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FileUploadComponent } from './file-uploader/file-uploader.component';
 
 import { CakesService } from './cakes.service'
 
@@ -35,7 +36,8 @@ import { CakesService } from './cakes.service'
     NavComponent,
     SwitcherComponent,
     CakeDetailComponent,
-    ProfileComponent
+    ProfileComponent,
+    FileUploadComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

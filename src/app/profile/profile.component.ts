@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  
+  currentRoute: string;
 
   constructor() { }
 
-  ngOnInit(): void {
-    
+  ngOnInit() {
+    this.currentRoute = window.location.pathname;
   }
+
+  getRoute() {
+    this.currentRoute = window.location.pathname;
+  } 
 }

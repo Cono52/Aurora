@@ -5,7 +5,12 @@
             <i routerLink="/switcher"  routerLinkActive="active"class="fa fa-home fa-2x" aria-hidden="true"></i>
         </div>
 
-        <div class="col-xs-4"><h1>Aurora</h1></div>
+        <div class="col-xs-4">
+            <h1>Aurora</h1>
+            <div (click)="getRoute()" class="btn btn-primary">
+                <i routerLink="/file-uploader" routerLinkActive="active" aria-hidden="true">Create New Look</i>
+            </div>
+        </div>
 
         <div *ngIf="currentRoute !== '/profile'" (click)="getRoute()" class="col-xs-4 icon icon-user">
             <i routerLink="/profile"  routerLinkActive="active" class="fa fa-user fa-2x" aria-hidden="true"></i>

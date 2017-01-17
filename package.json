@@ -109,7 +109,13 @@
     "ng2-bootstrap": "^1.1.16-9",
     "reflect-metadata": "^0.1.9",
     "rxjs": "~5.0.2",
-    "zone.js": "~0.7.4"
+    "zone.js": "~0.7.4",
+    "async": "^1.4.2",
+    "busboy": "^0.2.9",
+    "connect-busboy": "0.0.2",
+    "easyimage": "^2.0.3",
+    "multer": "^1.0.3",
+    "opencv": "6.0.0"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~2.4.1",
